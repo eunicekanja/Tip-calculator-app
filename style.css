@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+
+}
+.title{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    font-family: space mono,sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 5px;
+}
+/*main card*/
+.main{
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 20%;
+    padding: 2%;
+}
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.amount,.tips{
+   margin-bottom: 10%;
+}
+.main p{
+   margin-bottom: 3%;
+   font-family: space mono,sans-serif;
+}
+/*input i.e input amount side*/
+.input table{
+    border-spacing: 8px;
+}
+.input td{
+    padding: 9px 22px;
+    background:  hsl(183, 100%, 15%);
+    border-radius: 4px;
+    margin-bottom: 50%;
+    text-align: center;  
+}
+.custom{
+    background-color: hsl(180, 52%, 94%);
+}
+.custom button{
+    color: black;
+}
+.input button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: space mono,sans-serif;
+}
+.input input{
+    border: none;
+    background-color: hsl(180, 52%, 94%);
+    border-radius: 5px;
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    width: 250px;
+}
+.amountNum,.geust,.tipCustom{
+    font-family: space mono;
+    font-size: 1.2rem;
+    color: hsl(183, 100%, 15%);
+}
+
+/*output i.e calculated amount*/
+.output{
+    color: white;
+    background-color:hsl(183, 100%, 15%) ; 
+    text-align: center;
+    border-radius: 10px;
+    font-family: space mono;
+}
+.output table{
+border-spacing: 40px;
+}
+.output td{
+    padding-left: 0px;
+}
+.output button{
+    color: white;
+    border: none;
+    background-color:hsl(172, 67%, 45%);
+    padding: 8px 130px;
+    border-radius: 5px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    font-family: space mono,sans-serif;
+}
+span{
+    color: hsl(172, 67%, 45%);
+}
+.text{
+    padding-right: 30px;
+}
+.number{
+color: hsl(172, 67%, 45%);
+font-size: 1.5rem;
+}
+@media screen and (max-width:768px) {
+    .title{
+        margin-top: 4%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        padding: 5%;
+        text-transform: capitalize;
+    }
+    .input input{
+        width: 330px;
+        height: 32px;
+    }
+    .input table{
+        border-spacing: 20px;
+    }
+    .output{
+        margin-top: 10%;
+        padding-bottom: 7%;
+    }
+    .output table{
+        border-spacing: 20px;
+    }
+    .number{
+        padding-left: 20px;
+    }
+    .output button{
+        margin-top: 15%;
+        padding: 8px 100px;
+    }
+}
+
+.customTip{
+    margin-bottom: 10%;
+    display: none;
+}
